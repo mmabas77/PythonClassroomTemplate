@@ -31,7 +31,7 @@ jobs:
           setup-command: pip install --upgrade pytest opencv-contrib-python
           command: pytest -k test_canny_dilate_erode ./test.py
           timeout: 1
-          max-score: 2
+          max-score: 3
       - name: test_convert_to_grayscale
         id: test_convert_to_grayscale
         uses: classroom-resources/autograding-command-grader@v1
@@ -49,7 +49,7 @@ jobs:
           setup-command: pip install --upgrade pytest opencv-contrib-python
           command: pytest -k test_draw_rectangle ./test.py
           timeout: 1
-          max-score: 2
+          max-score: 1
       - name: test_resize_image
         id: test_resize_image
         uses: classroom-resources/autograding-command-grader@v1
